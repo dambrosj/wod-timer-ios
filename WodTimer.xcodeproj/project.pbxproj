@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00195A78C41F56C7D3021A1A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AD294545D3DD40318FE0CA /* HomeView.swift */; };
+		0291C2E35CBDCD3D97504602 /* WodsLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD63A7BD16464043D44DC4FA /* WodsLibraryView.swift */; };
+		0C85CBBF9A5EB471EEDD7778 /* EmomConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73D0CAF6B6167E146A0A932 /* EmomConfigView.swift */; };
+		123FC5D5342F86A7EB538100 /* ForTimeConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA00B8BF259DC1FDDE6FC45 /* ForTimeConfigView.swift */; };
+		12D1274260FDADF8AA2F9A4F /* NumberPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D8E18C8BE86DBAAF99669 /* NumberPickerView.swift */; };
+		15CD6B7F6D37B470AA09FF30 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74565EC8253A53C4ECD090E /* SettingsView.swift */; };
+		1F3E87C8906FECD5F0F5F758 /* ForTimeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C40AAF9B43E5D111D2091AE /* ForTimeEngine.swift */; };
+		232E213413FFDE301474B25C /* SavedWod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E14CA688F54046AC87F5AE /* SavedWod.swift */; };
+		29F2B80812DCFBE52A02EF30 /* OrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646BEFA2A90CB6F3DE2A48EE /* OrientationManager.swift */; };
+		2C593D9C7CADB4DC115D02F4 /* WodTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE57495951E43A02228E65 /* WodTimerApp.swift */; };
+		2D4F22F5C70834A8432BE1A2 /* WorkoutLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B389C676F2C975DC60C388 /* WorkoutLog.swift */; };
+		36BEC61120134A3EE9B9E029 /* TimerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3923F88A3AD9F3F53D96F /* TimerType.swift */; };
+		39F593DDE525D80F40D928C1 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA208CF28E7DA2587AA0000 /* SettingsStore.swift */; };
+		42879F751D3C5692EAC7D56A /* CompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97BE71DE339BF66B801867 /* CompletionView.swift */; };
+		4F2D66A1DA2D618BE4C0B605 /* SavedWodCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C049E3455E5F7B4556E232C /* SavedWodCard.swift */; };
+		5C3915CF7B99E85658572A45 /* TabataConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1E74E1AF1003C17F64E9C5 /* TabataConfigView.swift */; };
+		5C4919C4514AB46DFB210323 /* WodTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E47AF26CA5DD50DFB2400B /* WodTheme.swift */; };
+		5C933FC68BD83C7C99D54A45 /* AmrapEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B3B2A9F03039BA7091563 /* AmrapEngine.swift */; };
+		6123144833F77C79B5C75DA2 /* WheelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912D3AC73967661B2EAE5A94 /* WheelPickerView.swift */; };
+		64ECE532CF19DE92020AB84B /* ExercisesBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B59DC821E2F5AD307BFB54 /* ExercisesBlockView.swift */; };
+		6D1D2384902B10C54E8C4CF5 /* AmrapConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B2AE0673DFF343F819CB /* AmrapConfigView.swift */; };
+		7174076A96D38615ACA8700B /* WorkoutLogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81E276A3FFFE0051F63056 /* WorkoutLogStore.swift */; };
+		7CB0358A43ED8C3DF73A832B /* TimerPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C121FCE8A671D55427B342 /* TimerPhase.swift */; };
+		7E5E78D88E91380998D05ADB /* BaseIntervalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89878AEB2017BDD2586B6577 /* BaseIntervalEngine.swift */; };
+		814809D530D8504B9EC57E52 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E4B0048767D12FC330F9FB /* RootView.swift */; };
+		84828BDAB7EC88A4E50B5738 /* ExerciseSequenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB42E2AAB5F3C5B7F0A19C9 /* ExerciseSequenceView.swift */; };
+		A7250BD89FFA58D8CA82B9E4 /* BuiltInWods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEEDBD63EEB2547273A970 /* BuiltInWods.swift */; };
+		AFDEC94020422F512BB69B7D /* TimerRunningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1060AA3D762941773B22971 /* TimerRunningView.swift */; };
+		B7DA5A0734B10ECBCD3E3CEE /* CustomConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCABAAE7F596D33C2476E6F /* CustomConfigView.swift */; };
+		B8D5F9E3C7E277E923C80B02 /* SaveWodSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E948FF9B73E2933D1816D27 /* SaveWodSheet.swift */; };
+		C32DD271271092F441881C0B /* WodAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF2B8298A04A94FAC33C6D /* WodAppDelegate.swift */; };
+		CDE66AEEC1C43A07DBA1EFF6 /* TimerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E544B10D00804E7532D9F /* TimerConfig.swift */; };
+		D40D8F92074C53160ED8F335 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97702AD4F0860A1BC6811A13 /* AppState.swift */; };
+		D5F4E080052518090877DCB3 /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2DA38432F7D266A4D323C9 /* TimePickerView.swift */; };
+		D6A94ECF7A05B72109F46102 /* EmomEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43B26FC0686BCA534BDCA5 /* EmomEngine.swift */; };
+		DB431214902D8E1E9E925147 /* CircularTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E998DF3BB0B431B08EE8518 /* CircularTimerView.swift */; };
+		DC43837CCF9CB70AED57CEBC /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60821D69D6BCBD9CA7840CAE /* DrawerView.swift */; };
+		DC7F93ED04AD04925EE8D6E5 /* CustomEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EA79E924CC506C4690DA6D /* CustomEngine.swift */; };
+		E57A93F6A1BA5048E743C99D /* ConfigHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C330CE143E894A145E57B770 /* ConfigHelpers.swift */; };
+		E86A0753401971101F23F04B /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25559E5BAF698EE310816E7A /* DiaryView.swift */; };
+		EE2183D23BDF327FF8E330C3 /* DiaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B7779E20D775254E40BC /* DiaryDetailView.swift */; };
+		F1A9A8498B6012D01899D93F /* ConfigScaffold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E45820F1FBAFCC245FD8A /* ConfigScaffold.swift */; };
+		FAB298398F5BF62B40510471 /* TabataEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D7C69C0BF81B166C2AF4D /* TabataEngine.swift */; };
+		FB08F74BCDA3412BA63FB4E4 /* SavedWodStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5359DB2523D796A690150859 /* SavedWodStore.swift */; };
+		FD442E424A5A689C0E285DD4 /* WodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685BDF4611CE495B3E242D1 /* WodDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C40AAF9B43E5D111D2091AE /* ForTimeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForTimeEngine.swift; sourceTree = "<group>"; };
+		0D15B2AE0673DFF343F819CB /* AmrapConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmrapConfigView.swift; sourceTree = "<group>"; };
+		0FB42E2AAB5F3C5B7F0A19C9 /* ExerciseSequenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSequenceView.swift; sourceTree = "<group>"; };
+		19C121FCE8A671D55427B342 /* TimerPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPhase.swift; sourceTree = "<group>"; };
+		25559E5BAF698EE310816E7A /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		2BCABAAE7F596D33C2476E6F /* CustomConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomConfigView.swift; sourceTree = "<group>"; };
+		3C049E3455E5F7B4556E232C /* SavedWodCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedWodCard.swift; sourceTree = "<group>"; };
+		43B59DC821E2F5AD307BFB54 /* ExercisesBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesBlockView.swift; sourceTree = "<group>"; };
+		44DF2B8298A04A94FAC33C6D /* WodAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodAppDelegate.swift; sourceTree = "<group>"; };
+		491D8E18C8BE86DBAAF99669 /* NumberPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPickerView.swift; sourceTree = "<group>"; };
+		4A1E74E1AF1003C17F64E9C5 /* TabataConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabataConfigView.swift; sourceTree = "<group>"; };
+		4BD3B7779E20D775254E40BC /* DiaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDetailView.swift; sourceTree = "<group>"; };
+		5359DB2523D796A690150859 /* SavedWodStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedWodStore.swift; sourceTree = "<group>"; };
+		53E4B0048767D12FC330F9FB /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		60821D69D6BCBD9CA7840CAE /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
+		634E45820F1FBAFCC245FD8A /* ConfigScaffold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigScaffold.swift; sourceTree = "<group>"; };
+		646BEFA2A90CB6F3DE2A48EE /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
+		6F4D7C69C0BF81B166C2AF4D /* TabataEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabataEngine.swift; sourceTree = "<group>"; };
+		74EEEDBD63EEB2547273A970 /* BuiltInWods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltInWods.swift; sourceTree = "<group>"; };
+		7E948FF9B73E2933D1816D27 /* SaveWodSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveWodSheet.swift; sourceTree = "<group>"; };
+		7FB3923F88A3AD9F3F53D96F /* TimerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerType.swift; sourceTree = "<group>"; };
+		81EA79E924CC506C4690DA6D /* CustomEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEngine.swift; sourceTree = "<group>"; };
+		82865130C44E427DE3C07DF9 /* WodTimer.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WodTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89878AEB2017BDD2586B6577 /* BaseIntervalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseIntervalEngine.swift; sourceTree = "<group>"; };
+		8D43B26FC0686BCA534BDCA5 /* EmomEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmomEngine.swift; sourceTree = "<group>"; };
+		912D3AC73967661B2EAE5A94 /* WheelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPickerView.swift; sourceTree = "<group>"; };
+		93B389C676F2C975DC60C388 /* WorkoutLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLog.swift; sourceTree = "<group>"; };
+		95E2497CD230C55129FBEC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		97702AD4F0860A1BC6811A13 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		9E998DF3BB0B431B08EE8518 /* CircularTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTimerView.swift; sourceTree = "<group>"; };
+		9EA208CF28E7DA2587AA0000 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		A6E47AF26CA5DD50DFB2400B /* WodTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodTheme.swift; sourceTree = "<group>"; };
+		B2E14CA688F54046AC87F5AE /* SavedWod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedWod.swift; sourceTree = "<group>"; };
+		C330CE143E894A145E57B770 /* ConfigHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigHelpers.swift; sourceTree = "<group>"; };
+		CEA00B8BF259DC1FDDE6FC45 /* ForTimeConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForTimeConfigView.swift; sourceTree = "<group>"; };
+		D685BDF4611CE495B3E242D1 /* WodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodDetailView.swift; sourceTree = "<group>"; };
+		DC7E544B10D00804E7532D9F /* TimerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerConfig.swift; sourceTree = "<group>"; };
+		DE2DA38432F7D266A4D323C9 /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		E1060AA3D762941773B22971 /* TimerRunningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRunningView.swift; sourceTree = "<group>"; };
+		E73D0CAF6B6167E146A0A932 /* EmomConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmomConfigView.swift; sourceTree = "<group>"; };
+		E74565EC8253A53C4ECD090E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EB81E276A3FFFE0051F63056 /* WorkoutLogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogStore.swift; sourceTree = "<group>"; };
+		EF97BE71DE339BF66B801867 /* CompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionView.swift; sourceTree = "<group>"; };
+		F06B3B2A9F03039BA7091563 /* AmrapEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmrapEngine.swift; sourceTree = "<group>"; };
+		F1AD294545D3DD40318FE0CA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FACE57495951E43A02228E65 /* WodTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodTimerApp.swift; sourceTree = "<group>"; };
+		FD63A7BD16464043D44DC4FA /* WodsLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodsLibraryView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0D1DF3F4DA83710281177A33 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				9E998DF3BB0B431B08EE8518 /* CircularTimerView.swift */,
+				E1060AA3D762941773B22971 /* TimerRunningView.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		0F347C68AD7AFF4AF5D4E20D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0D15B2AE0673DFF343F819CB /* AmrapConfigView.swift */,
+				C330CE143E894A145E57B770 /* ConfigHelpers.swift */,
+				634E45820F1FBAFCC245FD8A /* ConfigScaffold.swift */,
+				2BCABAAE7F596D33C2476E6F /* CustomConfigView.swift */,
+				E73D0CAF6B6167E146A0A932 /* EmomConfigView.swift */,
+				CEA00B8BF259DC1FDDE6FC45 /* ForTimeConfigView.swift */,
+				7E948FF9B73E2933D1816D27 /* SaveWodSheet.swift */,
+				4A1E74E1AF1003C17F64E9C5 /* TabataConfigView.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		241EBDC4486773B15E9C4BD6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F1AD294545D3DD40318FE0CA /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		30704977DAADD58390B2CA72 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				60821D69D6BCBD9CA7840CAE /* DrawerView.swift */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
+		33D20FD81E085219DE5FB862 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2E14CA688F54046AC87F5AE /* SavedWod.swift */,
+				DC7E544B10D00804E7532D9F /* TimerConfig.swift */,
+				19C121FCE8A671D55427B342 /* TimerPhase.swift */,
+				7FB3923F88A3AD9F3F53D96F /* TimerType.swift */,
+				93B389C676F2C975DC60C388 /* WorkoutLog.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		38985E94A0F6C27EB33C1D3C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E74565EC8253A53C4ECD090E /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		48C63D2EEA90AE8FA73BEDAC /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3B7779E20D775254E40BC /* DiaryDetailView.swift */,
+				25559E5BAF698EE310816E7A /* DiaryView.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		604BB30EFA5F8C34DDC835F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82865130C44E427DE3C07DF9 /* WodTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		629B7DCC16142F005701D330 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				3C049E3455E5F7B4556E232C /* SavedWodCard.swift */,
+				D685BDF4611CE495B3E242D1 /* WodDetailView.swift */,
+				FD63A7BD16464043D44DC4FA /* WodsLibraryView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		668DC6730E1104F5FEE159C0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				97702AD4F0860A1BC6811A13 /* AppState.swift */,
+				95E2497CD230C55129FBEC2C /* Info.plist */,
+				646BEFA2A90CB6F3DE2A48EE /* OrientationManager.swift */,
+				53E4B0048767D12FC330F9FB /* RootView.swift */,
+				44DF2B8298A04A94FAC33C6D /* WodAppDelegate.swift */,
+				FACE57495951E43A02228E65 /* WodTimerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7E3FB142791CCE66FCA5A72C /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A6E47AF26CA5DD50DFB2400B /* WodTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		8D8EDB35A5C9DCFB01648E6D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E1812B842ADEB3835332F1CF /* Engine */,
+				33D20FD81E085219DE5FB862 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9FA8ECA8028B08A798707A74 = {
+			isa = PBXGroup;
+			children = (
+				F4806A352E65331E6311817B /* WodTimer */,
+				604BB30EFA5F8C34DDC835F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4DF64063D8FDC1A0F57C126 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				43B59DC821E2F5AD307BFB54 /* ExercisesBlockView.swift */,
+				0FB42E2AAB5F3C5B7F0A19C9 /* ExerciseSequenceView.swift */,
+				491D8E18C8BE86DBAAF99669 /* NumberPickerView.swift */,
+				DE2DA38432F7D266A4D323C9 /* TimePickerView.swift */,
+				912D3AC73967661B2EAE5A94 /* WheelPickerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AC3228F7803B4649D81F8EB2 /* Completion */ = {
+			isa = PBXGroup;
+			children = (
+				EF97BE71DE339BF66B801867 /* CompletionView.swift */,
+			);
+			path = Completion;
+			sourceTree = "<group>";
+		};
+		E1812B842ADEB3835332F1CF /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				F06B3B2A9F03039BA7091563 /* AmrapEngine.swift */,
+				89878AEB2017BDD2586B6577 /* BaseIntervalEngine.swift */,
+				81EA79E924CC506C4690DA6D /* CustomEngine.swift */,
+				8D43B26FC0686BCA534BDCA5 /* EmomEngine.swift */,
+				0C40AAF9B43E5D111D2091AE /* ForTimeEngine.swift */,
+				6F4D7C69C0BF81B166C2AF4D /* TabataEngine.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		EE59F4171284B786953071D6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				74EEEDBD63EEB2547273A970 /* BuiltInWods.swift */,
+				5359DB2523D796A690150859 /* SavedWodStore.swift */,
+				9EA208CF28E7DA2587AA0000 /* SettingsStore.swift */,
+				EB81E276A3FFFE0051F63056 /* WorkoutLogStore.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F4806A352E65331E6311817B /* WodTimer */ = {
+			isa = PBXGroup;
+			children = (
+				668DC6730E1104F5FEE159C0 /* App */,
+				EE59F4171284B786953071D6 /* Data */,
+				8D8EDB35A5C9DCFB01648E6D /* Domain */,
+				F73BC136223570B14349F662 /* UI */,
+			);
+			path = WodTimer;
+			sourceTree = "<group>";
+		};
+		F73BC136223570B14349F662 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AC3228F7803B4649D81F8EB2 /* Completion */,
+				A4DF64063D8FDC1A0F57C126 /* Components */,
+				0F347C68AD7AFF4AF5D4E20D /* Config */,
+				48C63D2EEA90AE8FA73BEDAC /* Diary */,
+				30704977DAADD58390B2CA72 /* Drawer */,
+				241EBDC4486773B15E9C4BD6 /* Home */,
+				629B7DCC16142F005701D330 /* Library */,
+				38985E94A0F6C27EB33C1D3C /* Settings */,
+				7E3FB142791CCE66FCA5A72C /* Theme */,
+				0D1DF3F4DA83710281177A33 /* Timer */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAD12DEF1997D8A6789B2899 /* WodTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1C10F4A121325BC9BB94165 /* Build configuration list for PBXNativeTarget "WodTimer" */;
+			buildPhases = (
+				9DF15EEF0B6E608759E6E3F4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WodTimer;
+			packageProductDependencies = (
+			);
+			productName = WodTimer;
+			productReference = 82865130C44E427DE3C07DF9 /* WodTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9B10F4E378208885418206E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					DAD12DEF1997D8A6789B2899 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CFF31B8E3B385FEF3F8DAEE7 /* Build configuration list for PBXProject "WodTimer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9FA8ECA8028B08A798707A74;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 604BB30EFA5F8C34DDC835F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAD12DEF1997D8A6789B2899 /* WodTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DF15EEF0B6E608759E6E3F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D1D2384902B10C54E8C4CF5 /* AmrapConfigView.swift in Sources */,
+				5C933FC68BD83C7C99D54A45 /* AmrapEngine.swift in Sources */,
+				D40D8F92074C53160ED8F335 /* AppState.swift in Sources */,
+				7E5E78D88E91380998D05ADB /* BaseIntervalEngine.swift in Sources */,
+				A7250BD89FFA58D8CA82B9E4 /* BuiltInWods.swift in Sources */,
+				DB431214902D8E1E9E925147 /* CircularTimerView.swift in Sources */,
+				42879F751D3C5692EAC7D56A /* CompletionView.swift in Sources */,
+				E57A93F6A1BA5048E743C99D /* ConfigHelpers.swift in Sources */,
+				F1A9A8498B6012D01899D93F /* ConfigScaffold.swift in Sources */,
+				B7DA5A0734B10ECBCD3E3CEE /* CustomConfigView.swift in Sources */,
+				DC7F93ED04AD04925EE8D6E5 /* CustomEngine.swift in Sources */,
+				EE2183D23BDF327FF8E330C3 /* DiaryDetailView.swift in Sources */,
+				E86A0753401971101F23F04B /* DiaryView.swift in Sources */,
+				DC43837CCF9CB70AED57CEBC /* DrawerView.swift in Sources */,
+				0C85CBBF9A5EB471EEDD7778 /* EmomConfigView.swift in Sources */,
+				D6A94ECF7A05B72109F46102 /* EmomEngine.swift in Sources */,
+				84828BDAB7EC88A4E50B5738 /* ExerciseSequenceView.swift in Sources */,
+				64ECE532CF19DE92020AB84B /* ExercisesBlockView.swift in Sources */,
+				123FC5D5342F86A7EB538100 /* ForTimeConfigView.swift in Sources */,
+				1F3E87C8906FECD5F0F5F758 /* ForTimeEngine.swift in Sources */,
+				00195A78C41F56C7D3021A1A /* HomeView.swift in Sources */,
+				12D1274260FDADF8AA2F9A4F /* NumberPickerView.swift in Sources */,
+				29F2B80812DCFBE52A02EF30 /* OrientationManager.swift in Sources */,
+				814809D530D8504B9EC57E52 /* RootView.swift in Sources */,
+				B8D5F9E3C7E277E923C80B02 /* SaveWodSheet.swift in Sources */,
+				232E213413FFDE301474B25C /* SavedWod.swift in Sources */,
+				4F2D66A1DA2D618BE4C0B605 /* SavedWodCard.swift in Sources */,
+				FB08F74BCDA3412BA63FB4E4 /* SavedWodStore.swift in Sources */,
+				39F593DDE525D80F40D928C1 /* SettingsStore.swift in Sources */,
+				15CD6B7F6D37B470AA09FF30 /* SettingsView.swift in Sources */,
+				5C3915CF7B99E85658572A45 /* TabataConfigView.swift in Sources */,
+				FAB298398F5BF62B40510471 /* TabataEngine.swift in Sources */,
+				D5F4E080052518090877DCB3 /* TimePickerView.swift in Sources */,
+				CDE66AEEC1C43A07DBA1EFF6 /* TimerConfig.swift in Sources */,
+				7CB0358A43ED8C3DF73A832B /* TimerPhase.swift in Sources */,
+				AFDEC94020422F512BB69B7D /* TimerRunningView.swift in Sources */,
+				36BEC61120134A3EE9B9E029 /* TimerType.swift in Sources */,
+				6123144833F77C79B5C75DA2 /* WheelPickerView.swift in Sources */,
+				C32DD271271092F441881C0B /* WodAppDelegate.swift in Sources */,
+				FD442E424A5A689C0E285DD4 /* WodDetailView.swift in Sources */,
+				5C4919C4514AB46DFB210323 /* WodTheme.swift in Sources */,
+				2C593D9C7CADB4DC115D02F4 /* WodTimerApp.swift in Sources */,
+				0291C2E35CBDCD3D97504602 /* WodsLibraryView.swift in Sources */,
+				2D4F22F5C70834A8432BE1A2 /* WorkoutLog.swift in Sources */,
+				7174076A96D38615ACA8700B /* WorkoutLogStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0E551A2AB0475AAFAEE2F958 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WodTimer/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dambrosj.wod-timer";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2EA53A64E93C09FC8231498A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		46257EA5A2494BFC05FCC3C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F66CFF1B8C1DA3115CC1C83E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WodTimer/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dambrosj.wod-timer";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFF31B8E3B385FEF3F8DAEE7 /* Build configuration list for PBXProject "WodTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46257EA5A2494BFC05FCC3C6 /* Debug */,
+				2EA53A64E93C09FC8231498A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D1C10F4A121325BC9BB94165 /* Build configuration list for PBXNativeTarget "WodTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E551A2AB0475AAFAEE2F958 /* Debug */,
+				F66CFF1B8C1DA3115CC1C83E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9B10F4E378208885418206E /* Project object */;
+}
