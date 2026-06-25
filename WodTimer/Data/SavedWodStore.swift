@@ -52,6 +52,27 @@ final class SavedWodStore {
         persist()
     }
 
+    // MARK: – Export / Import
+
+    func makeExportURL() -> URL? {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+        guard let data = try? encoder.encode(wods) else { return nil }
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyyMMdd"
+        let name = "wod-backup-\(formatter.string(from: Date())).json"
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent(name)
+        try? data.write(to: url, options: .atomic)
+        return url
+    }
+
+    @discardableResult
+    func importData(_ data: Data) -> Int {
+        guard let imported = try? JSONDecoder().decode([SavedWod].self, from: data) else { return 0 }
+        for wod in imported { save(wod) }
+        return imported.count
+    }
+
     private func seedBuiltIns() {
         let existingIds = Set(wods.map(\.id))
         let seeds = BuiltInWods.all.filter { !existingIds.contains($0.id) }

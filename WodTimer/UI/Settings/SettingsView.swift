@@ -5,6 +5,10 @@ struct SettingsView: View {
     private let colors = WodTheme.colors
     private let spacing = WodTheme.spacing
 
+    @State private var exportURL: URL? = nil
+    @State private var showImporter = false
+    @State private var importResult: String? = nil
+
     var body: some View {
         @Bindable var settings = appState.settings
         ZStack {
@@ -17,6 +21,8 @@ struct SettingsView: View {
                         audioSection(settings: settings)
                         Divider().background(colors.divider).padding(.vertical, spacing.l)
                         themeSection(settings: settings)
+                        Divider().background(colors.divider).padding(.vertical, spacing.l)
+                        dataSection
                         Spacer().frame(height: spacing.xl)
                     }
                     .padding(.horizontal, spacing.m)
@@ -24,6 +30,35 @@ struct SettingsView: View {
             }
         }
         .navigationBarHidden(true)
+        .task { exportURL = appState.store.makeExportURL() }
+        .fileImporter(
+            isPresented: $showImporter,
+            allowedContentTypes: [.json],
+            allowsMultipleSelection: false
+        ) { result in
+            switch result {
+            case .success(let urls):
+                guard let url = urls.first else { return }
+                let accessing = url.startAccessingSecurityScopedResource()
+                defer { if accessing { url.stopAccessingSecurityScopedResource() } }
+                if let data = try? Data(contentsOf: url) {
+                    let count = appState.store.importData(data)
+                    importResult = count > 0
+                        ? "Importati \(count) WOD con successo."
+                        : "Nessun WOD valido trovato nel file."
+                } else {
+                    importResult = "Impossibile leggere il file."
+                }
+            case .failure:
+                importResult = "Errore durante l'importazione."
+            }
+        }
+        .alert(
+            importResult ?? "",
+            isPresented: Binding(get: { importResult != nil }, set: { if !$0 { importResult = nil } })
+        ) {
+            Button("OK") { importResult = nil }
+        }
     }
 
     // MARK: – Top bar
@@ -136,6 +171,34 @@ struct SettingsView: View {
         }
     }
 
+    // MARK: – Data section
+
+    @ViewBuilder
+    private var dataSection: some View {
+        sectionHeader("Dati")
+
+        if let url = exportURL {
+            ShareLink(item: url) {
+                dataRowContent(
+                    label: "Esporta WOD",
+                    subtitle: "Salva tutti i WOD in un file JSON",
+                    systemImage: "square.and.arrow.up"
+                )
+            }
+            .buttonStyle(.plain)
+        }
+
+        Spacer().frame(height: spacing.s)
+
+        dataRow(
+            label: "Importa WOD",
+            subtitle: "Carica WOD da un file JSON (sovrascrive se esistenti)",
+            systemImage: "square.and.arrow.down"
+        ) {
+            showImporter = true
+        }
+    }
+
     // MARK: – Helpers
 
     private func sectionHeader(_ title: String) -> some View {
@@ -163,6 +226,34 @@ struct SettingsView: View {
             control()
         }
         .padding(.vertical, 6)
+    }
+
+    private func dataRowContent(label: String, subtitle: String, systemImage: String) -> some View {
+        HStack(spacing: spacing.m) {
+            Image(systemName: systemImage)
+                .font(.system(size: 18))
+                .foregroundStyle(colors.accentTabata)
+                .frame(width: 28)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(label)
+                    .font(.system(size: 16))
+                    .foregroundStyle(colors.textPrimary)
+                Text(subtitle)
+                    .font(.system(size: 13))
+                    .foregroundStyle(colors.textSecondary)
+            }
+            Spacer()
+            Image(systemName: "chevron.right")
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(colors.textDisabled)
+        }
+        .padding(.vertical, 8)
+    }
+
+    private func dataRow(label: String, subtitle: String, systemImage: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            dataRowContent(label: label, subtitle: subtitle, systemImage: systemImage)
+        }
     }
 
     private func themeOption(label: String, selected: Bool, onSelect: @escaping () -> Void) -> some View {
